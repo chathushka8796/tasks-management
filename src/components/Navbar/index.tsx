@@ -1,10 +1,8 @@
 import {
   ChevronDown,
-  NotificationsOutline,
   PersonCircle,
   SearchOutline,
-  SettingsOutline,
-  ShareSocialOutline,
+ 
 } from "react-ionicons";
 
 interface NavbarProps {
@@ -17,9 +15,9 @@ const Navbar = ({ onSearch }: NavbarProps) => {
       <div className="flex items-center gap-3 cursor-pointer">
         <PersonCircle color="#60a5fa" width={"28px"} height={"28px"} />
         <span className="text-blue-400 font-semibold md:text-lg text-sm whitespace-nowrap">
-          Board Name
+          Tasks Board
         </span>
-        <ChevronDown color="#60a5fa" width={"16px"} height={"16px"} />
+       
       </div>
       <div className="md:w-[800px] w-[130px] bg-gray-100 rounded-lg px-3 py-[10px] flex items-center gap-2">
         <SearchOutline color={"#999"} />
@@ -32,13 +30,13 @@ const Navbar = ({ onSearch }: NavbarProps) => {
       </div>
       <div className="md:flex hidden items-center gap-4">
         <div className="grid place-items-center bg-gray-100 rounded-full p-2 cursor-pointer">
-          <ShareSocialOutline color={"#444"} />
+          
         </div>
         <div className="grid place-items-center bg-gray-100 rounded-full p-2 cursor-pointer">
-          <SettingsOutline color={"#444"} />
+          
         </div>
         <div className="grid place-items-center bg-gray-100 rounded-full p-2 cursor-pointer">
-          <NotificationsOutline color={"#444"} />
+           
         </div>
       </div>
     </div>
